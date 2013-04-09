@@ -1,0 +1,98 @@
+/*css by Mattia Pazienti at mjp82.com use as u want */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;	padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none; padding:0; margin:0; overflow:hidden}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {	content: '';content: none;}
+table {border-collapse: collapse;	border-spacing: 0;}
+input, textarea {-webkit-appearance: none;}
+a:hover, a:active { outline: 0; }
+
+html {background: #ddd}
+body {font-family: arial, sans-serif; background:transparent}
+footer {width:1000px; margin: 0px auto; font-size:14px; color:#666;}
+
+/* JQUERIED */
+
+#wrapper > div {cursor:pointer; color: #fff; padding:10px; overflow:hidden; position:absolute;  transition: all 50ms ease-in 0s; -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 300ms ease-in 0s;}
+#wrapper {position:relative; margin:20px auto 0px auto; overflow:hidden; height:820px; width:1000px; clear:both; z-index:2200;}
+#wrapper > div.tab1 {background-color: #999;}
+#wrapper > div.tab2 {background-color: #888;}
+#wrapper > div.tab3 {background-color: #777;}
+#wrapper > div.tab4 {background-color: #666;}
+#wrapper > div.tab5 {background-color: #555;}
+#wrapper > div.tab6 {background-color: #444;}
+
+/*tab1 on start*/
+#wrapper > div.tab1 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper > div.tab2 {width:250px; height:250px; top:540px; left:0;}
+#wrapper > div.tab3 {width:250px; height:250px; top:540px; left:270px;}
+#wrapper > div.tab4 {width:460px; height:250px; top:540px; left:540px;}
+#wrapper > div.tab5 {width:250px; height:250px; top:270px; left:750px;}
+#wrapper > div.tab6 {width:250px; height:250px; top:0; left:750px;}
+
+/*tab2 on*/
+#wrapper.tab2on > div.tab2 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper.tab2on > div.tab6 {width:250px; height:250px; top:540px; left:0;}
+#wrapper.tab2on > div.tab4 {width:250px; height:250px; top:540px; left:270px;}
+#wrapper.tab2on > div.tab1 {cursor:pointer; width:460px; height:250px; top:540px; left:540px;}
+#wrapper.tab2on > div.tab3 {width:250px; height:250px; top:270px; left:750px;}
+#wrapper.tab2on > div.tab5 {width:250px; height:250px; top:0; left:750px;}
+
+/*tab3 on*/
+#wrapper.tab3on > div.tab3 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper.tab3on > div.tab1 {cursor:pointer; width:250px; height:250px; top:540px; left:0;}
+#wrapper.tab3on > div.tab2 {width:250px; height:250px; top:540px; left:270px;}
+#wrapper.tab3on > div.tab6 {width:460px; height:250px; top:540px; left:540px;}
+#wrapper.tab3on > div.tab4 {width:250px; height:250px; top:270px; left:750px;}
+#wrapper.tab3on > div.tab5 {width:250px; height:250px; top:0; left:750px;}
+
+/*tab4 on*/
+#wrapper.tab4on > div.tab4 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper.tab4on > div.tab3 {width:250px; height:250px; top:540px; left:0;}
+#wrapper.tab4on > div.tab1 {cursor:pointer; width:250px; height:250px; top:540px; left:270px;}
+#wrapper.tab4on > div.tab6 {width:460px; height:250px; top:540px; left:540px;}
+#wrapper.tab4on > div.tab5 {width:250px; height:250px; top:270px; left:750px;}
+#wrapper.tab4on > div.tab2 {width:250px; height:250px; top:0; left:750px;}
+
+/*tab5 on*/
+#wrapper.tab5on > div.tab5 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper.tab5on > div.tab4 {width:250px; height:250px; top:540px; left:0;}
+#wrapper.tab5on > div.tab3 {width:250px; height:250px; top:540px; left:270px;}
+#wrapper.tab5on > div.tab2 {width:460px; height:250px; top:540px; left:540px;}
+#wrapper.tab5on > div.tab1 {cursor:pointer; width:250px; height:250px; top:270px; left:750px;}
+#wrapper.tab5on > div.tab6 {width:250px; height:250px; top:0; left:750px;}
+
+/*tab6 on*/
+#wrapper.tab6on > div.tab6 {cursor:default; width:730px; height:520px; top:0; left:0;}
+#wrapper.tab6on > div.tab5 {width:250px; height:250px; top:540px; left:0;}
+#wrapper.tab6on > div.tab1 {cursor:pointer; width:250px; height:250px; top:540px; left:270px;}
+#wrapper.tab6on > div.tab3 {width:460px; height:250px; top:540px; left:540px;}
+#wrapper.tab6on > div.tab2 {width:250px; height:250px; top:270px; left:750px;}
+#wrapper.tab6on > div.tab4 {width:250px; height:250px; top:0; left:750px;}
+
+/* OTHER CSS */
+
+nav {background:#ccc; width: 1000px; margin:0px auto;height: 54px;z-index: 2600;}
+nav > a:focus {outline-style:none;}
+nav > a {color:#333; font-size:16px; text-transform:uppercase; display:block;float:left;  overflow:hidden; margin: 0px 1px 0px 0px;  height:50px;  text-decoration:none; padding: 3px 20px 0px 20px; line-height:50px;}
+nav > a:hover {color:#fff !important; text-decoration:none; transition: all 300ms ease-in 0s; -moz-transition: all 200ms ease-in 0s; -webkit-transition: all 300ms ease-in 0s;}
+nav > a:hover {background-color: #555;}
+
+
